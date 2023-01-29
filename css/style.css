@@ -1,60 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap');
 
 body {
+    /* fuente que usare en toda la pagina */
     font-family: 'Sofia Sans', sans-serif;
 }
 
-/* fuente que usare en toda la pagina */
+.html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* HEADER */
 
-
-header h1 {
-    display: inline-block;
-}
-
-h1 {
-    color: #f4acb7;
+.title {
+    color: #FB6F92;
     font-weight: bolder;
-    position: absolute;
-    left: 180px;
-    top: 40px;
+    background-color: #FFE5EC;
+    border: solid 2px #FFC2D1;
 }
 
-.logo {
-    position: relative;
-    right: 0px;
-}
-
-header ul li {
-    display: inline-block;
-    margin: 30px;
-}
-
-.mainLinks {
-    border: 2px solid #9D8189;
-    background-color: #F4ACB7;
-}
-
-a {
+.explorelFont {
     color: black;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
+    margin-left: 1rem;
 }
 
 /* MAIN INDEX */
 
-.mainIndex {
-    display: block;
+.imgCarousel {
+    grid-area: ic;
+    padding: .5rem;
 }
 
-.destacadosMain {
-    color: black;
-    font-weight: bold;
-    background-color: #D8E2DC;
-    border: #FFE5D9 solid 2px;
-    text-align: center;
+.img1 {
+    grid-area: i1;
+    padding-top: .5rem;
+    padding-left: 0.5rem;
+}
 
+.img2 {
+    grid-area: i2;
+    padding-top: .5rem;
+    padding-right: .5rem;
+}
+
+.img3 {
+    grid-area: i3;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+}
+
+.img4 {
+    grid-area: i4;
+    padding-right: 0.5rem;
+    padding-bottom: .5rem;
+}
+
+@media (min-width:350px) {
+    .mainIndex{
+        display: grid;
+        grid-template-areas: 
+        "ic ic"
+        "i1 i2"
+        "i3 i4";
+    }
+}
+
+@media (min-width:768px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas: 
+        " ic ic i1 "
+        " ic ic i3 "
+        ;
+    }
+    .img4 {
+        display: none;
+    }
+    .img2 {
+        display: none;
+    }
+}
+
+@media (min-width:991px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas:
+            " ic ic i1 i2 "
+            " ic ic i3 i4 "
+            ;
+    }
+    .img4 {
+        display: block;
+    }
+    .img2 {
+        display: block;
+    }
 }
 
 /* MAIN PRODUCTOS */
@@ -192,30 +237,39 @@ footer {
     padding-left: 30px;
 }
 
-footer ul li {
-    display: block;
-    margin: 10px;
-    text-align: left;
+.footerTitle {
+    grid-area: ft;
 }
 
-footer nav {
-    display: inline-block;
+.linkFb {
+    grid-area: fb;
 }
 
-footer h4 {
-    display: inline-block;
+.linkIg {
+    grid-area: ig;
+}
+
+.linkWp {
+    grid-area: wp;
 }
 
 .txt1 {
-    position: absolute;
-    right: 30px;
-    bottom: 55px;
+    grid-area: t1;
 }
 
 .txt2 {
-    position: absolute;
-    right: 30px;
-    bottom: 35px;
+    grid-area: t2;
+}
+
+@media (min-width:991px) {
+    .footer {
+        display: grid;
+        grid-template-areas: 
+        "ft ft ft ft ft"
+        "fb fb fb fb t1"
+        "ig ig ig ig t1"
+        "wp wp wp wp t2";
+    }
 }
 
 /* loguito flotante de wp */
@@ -226,3 +280,4 @@ footer h4 {
     bottom: 10px;
     z-index: 2;
 }
+
