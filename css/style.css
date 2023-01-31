@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap');
 
 body {
+    /* fuente que usare en toda la pagina */
     font-family: 'Sofia Sans', sans-serif;
     background-color: #FFC2D1;
     background: linear-gradient(to right, #FFE5EC, #fb6f92);
@@ -235,3 +236,4 @@ body {
     bottom: 10px;
     z-index: 2;
 }
+
