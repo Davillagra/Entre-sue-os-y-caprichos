@@ -2,220 +2,220 @@
 
 body {
     font-family: 'Sofia Sans', sans-serif;
+    background-color: #FFC2D1;
+    background: linear-gradient(to right, #FFE5EC, #fb6f92);
 }
 
-/* fuente que usare en toda la pagina */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.html {
+    font-size: 62.5%;
+}
+
+@import 'animate.css';
 
 /* HEADER */
 
-
-header h1 {
-    display: inline-block;
+.navbar {
+    background-color: #FFB3C6;
+    padding: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 15px black;
 }
 
-h1 {
-    color: #f4acb7;
-    font-weight: bolder;
-    position: absolute;
-    left: 180px;
-    top: 40px;
-}
-
-.logo {
-    position: relative;
-    right: 0px;
-}
-
-header ul li {
-    display: inline-block;
-    margin: 30px;
-}
-
-.mainLinks {
-    border: 2px solid #9D8189;
-    background-color: #F4ACB7;
-}
-
-a {
+.aFormat {
     color: black;
-    text-decoration: none;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: large;
+}
+
+.aFormat2 {
+    color: black;
+    font-weight: 900;
+    font-size: large;
+}
+
+.dropdown-menu {
+    background-color: #F4ACB7
+}
+
+.dropdown-item:hover {
+    background-color: #FFC2D1;
+}
+
+.aFormat:hover {
+    text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
+    color: #fb6f92;
+}
+
+.form-control {
+    background-color: #FFE5EC;
+}
+
+.btn-outline-success {
+    background-color: #FFE5EC;
+    border-color: #fb6f92;
+}
+
+.btn-outline-success:hover {
+    background-color: #fb6f92;
+    border-color: black;
+}
+
+.btn-outline-success:active {
+    background-color: #fb6f92 !important;
+    /* Uso este important solo aqui porque esta regla del boton fue heredada de js y no se modificarla de otra forma aun */
 }
 
 /* MAIN INDEX */
 
-.mainIndex {
-    display: block;
+.mainH1 {
+    font-weight: bolder;
+    grid-area: des;
+    color: #f5537b;
 }
 
-.destacadosMain {
+.mainH2 {
     color: black;
-    font-weight: bold;
-    background-color: #D8E2DC;
-    border: #FFE5D9 solid 2px;
-    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
+}
 
+.carouselOpt {
+    grid-area: car;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+@media (min-width:350px) {
+    .mainIndex {
+        display: grid;
+        padding-top: 7.5rem;
+        grid-template-areas:
+            "des des"
+            "car car"
+            "img1 img2"
+            "img3 img4"
+        ;
+        gap: 0.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas:
+            "des des des"
+            "car car img1"
+            "car car img2"
+        ;
+        gap: 0.5rem;
+    }
+
+    .img3 {
+        display: none;
+    }
+
+    .img4 {
+        display: none;
+    }
+}
+
+@media (min-width:992px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas:
+            "des des des des"
+            "car car img1 img2"
+            "car car img3 img4";
+        gap: 0.5rem;
+    }
+
+    .img3 {
+        display: block;
+    }
+
+    .img4 {
+        display: block;
+    }
 }
 
 /* MAIN PRODUCTOS */
 .mainProd {
-
-    border: #F4ACB7 solid 2px;
-    background-color: #FFCAD4;
-    padding-left: 30px
+    padding-top: 7.5rem;
 }
 
-.mainProd h3 {
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: center;
-}
-
-.mainProd div {
-    display: inline-block;
-    padding: 0px 5px 0px 5px;
-}
-
-.mainProd h4 {
-    text-align: center;
-    font-size: large;
+.mainProd h1 {
+    color: #f5537b;
     font-weight: bolder;
 }
 
 /* MAIN QUIENES SOMOS */
 
 .mainQuiSom {
-    border: #F4ACB7 solid 2px;
-    background-color: #FFCAD4;
-    padding: 0px 15px 0px 15px;
+    padding-top: 7.5rem;
 }
 
-.mainQuiSom h3 {
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: center;
-}
-
-.mainQuiSom p {
-    padding: 0px 15px 0px 15px;
-    text-align: justify;
+.mainQuiSom h1 {
+    color: #f5537b;
     font-weight: bolder;
 }
 
 /* MAIN CONTACTO */
 
 .mainContacto {
-    border: #F4ACB7 solid 2px;
-    background-color: #FFCAD4;
-    padding: 0px 15px 0px 15px;
+    padding-top: 7.5rem;
 }
 
-.mainContacto h3 {
-    font-size: xx-large;
+.mainContacto h1 {
+    color: #f5537b;
     font-weight: bolder;
-    text-align: left;
-}
-
-.mainContacto div {
-    display: inline-block;
-    padding: 0px 20px 30px 20px;
-    align-items: center;
-    bottom: 76px;
-    position: relative;
-}
-
-.mainContacto form {
-    display: inline-block;
-    padding: 0px 50px 30px 50px;
-}
-
-.mainContacto h4 {
-    text-align: center;
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.mainContacto label {
-    font-weight: bolder;
-}
-
-.nombreSolicitud {
-    margin: 0px 25px 0px 0px;
-}
-
-.apellidoSolicitud {
-    margin: 0px 27px 0px 0px;
-}
-
-.mailSolicitud {
-    margin: 0px 53px 0px 0px;
 }
 
 /* MAIN PREGUNTAS FRECUENTES */
 
 .mainPrFr {
-    display: inline-block;
-    border: #F4ACB7 solid 2px;
-    background-color: #FFCAD4;
-    padding-left: 30px;
+    padding-top: 7.5rem;
 }
 
-.mainPrFr h3 {
+.mainPrFr h1 {
+    color: #f5537b;
     font-weight: bolder;
-    text-align: left;
-    font-size: xx-large;
 }
 
-.mainPrFr h4 {
-    padding-left: 15px;
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-button {
+    background-color: coral;
     font-weight: bolder;
-    color: black;
-    font-size: larger;
-    font-style: oblique;
-    text-decoration: underline;
+    opacity: 80%;
 }
 
-.mainPrFr p {
-    padding-left: 40px;
-    padding-right: 40px;
-    font-weight: bold;
-    color: black;
-}
 
 /* FOOTER */
 
-footer {
-    border: 2px solid #D8E2DC;
-    background-color: #FFE5D9;
-    position: relative;
-    /* no encontre una mejor manera de organizar los textos txt1 y txt2 para que esten al costado */
-    padding-left: 30px;
-}
-
-footer ul li {
-    display: block;
-    margin: 10px;
-    text-align: left;
-}
-
-footer nav {
-    display: inline-block;
-}
-
-footer h4 {
-    display: inline-block;
-}
-
-.txt1 {
-    position: absolute;
-    right: 30px;
-    bottom: 55px;
-}
-
-.txt2 {
-    position: absolute;
-    right: 30px;
-    bottom: 35px;
+.footerSpan {
+    font-weight: bolder;
 }
 
 /* loguito flotante de wp */
