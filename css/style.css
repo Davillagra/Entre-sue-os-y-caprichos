@@ -73,9 +73,12 @@ body {
 
 /* MAIN INDEX */
 
+.mainIndex {
+    padding-top: 7.5rem;
+}
+
 .mainH1 {
     font-weight: bolder;
-    grid-area: des;
     color: #f5537b;
 }
 
@@ -85,7 +88,15 @@ body {
     text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
 }
 
-.carouselOpt {
+.carousel-control-prev {
+    opacity: 100%;
+}
+
+.carousel-control-next {
+    opacity: 100%;
+}
+
+/* .carouselOpt {
     grid-area: car;
 }
 
@@ -115,7 +126,7 @@ body {
             "img1 img2"
             "img3 img4"
         ;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 }
 
@@ -127,7 +138,6 @@ body {
             "car car img1"
             "car car img2"
         ;
-        gap: 0.5rem;
     }
 
     .img3 {
@@ -146,7 +156,6 @@ body {
             "des des des des"
             "car car img1 img2"
             "car car img3 img4";
-        gap: 0.5rem;
     }
 
     .img3 {
@@ -156,7 +165,7 @@ body {
     .img4 {
         display: block;
     }
-}
+} */
 
 /* MAIN PRODUCTOS */
 .mainProd {
