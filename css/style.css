@@ -1,239 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap');
-
+@import "https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap";
+@import "animate.css";
 body {
-    /* fuente que usare en toda la pagina */
-    font-family: 'Sofia Sans', sans-serif;
-    background-color: #FFC2D1;
-    background: linear-gradient(to right, #FFE5EC, #fb6f92);
+  font-family: "Sofia Sans", sans-serif;
+  background-color: #FFC2D1;
+  background: linear-gradient(to right, #FFE5EC, #fb6f92);
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-.html {
-    font-size: 62.5%;
-}
-
-@import 'animate.css';
 
 /* HEADER */
+.html {
+  font-size: 62.5%;
+}
 
 .navbar {
-    background-color: #FFB3C6;
-    padding: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 4px 4px 15px black;
+  background-color: #FFB3C6;
+  padding: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 4px 4px 15px black;
 }
 
 .aFormat {
-    color: black;
-    font-weight: 900;
-    font-size: large;
+  color: black;
+  font-weight: 900;
+  font-size: large;
+}
+.aFormat:hover {
+  text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
+  color: #fb6f92;
 }
 
 .aFormat2 {
-    color: black;
-    font-weight: 900;
-    font-size: large;
+  color: black;
+  font-weight: 900;
+  font-size: large;
 }
 
 .dropdown-menu {
-    background-color: #F4ACB7
+  background-color: #F4ACB7;
 }
 
 .dropdown-item:hover {
-    background-color: #FFC2D1;
-}
-
-.aFormat:hover {
-    text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
-    color: #fb6f92;
+  background-color: #FFC2D1;
 }
 
 .form-control {
-    background-color: #FFE5EC;
+  background-color: #FFE5EC;
 }
 
 .btn-outline-success {
-    background-color: #FFE5EC;
-    border-color: #fb6f92;
+  background-color: #FFE5EC;
+  border-color: #fb6f92;
 }
-
 .btn-outline-success:hover {
-    background-color: #fb6f92;
-    border-color: black;
+  background-color: #fb6f92;
+  border-color: black;
 }
-
 .btn-outline-success:active {
-    background-color: #fb6f92 !important;
-    /* Uso este important solo aqui porque esta regla del boton fue heredada de js y no se modificarla de otra forma aun */
+  background-color: #fb6f92 !important;
 }
 
 /* MAIN INDEX */
-
 .mainIndex {
-    padding-top: 7.5rem;
+  padding-top: 7.5rem;
 }
 
 .mainH1 {
-    font-weight: bolder;
-    color: #f5537b;
+  font-weight: bolder;
+  color: #f5537b;
 }
 
 .mainH2 {
-    color: black;
-    font-weight: bolder;
-    text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
+  color: black;
+  font-weight: bolder;
+  text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
 }
 
 .carousel-control-prev {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .carousel-control-next {
-    opacity: 100%;
+  opacity: 100%;
 }
-
-/* .carouselOpt {
-    grid-area: car;
-}
-
-.img1 {
-    grid-area: img1;
-}
-
-.img2 {
-    grid-area: img2;
-}
-
-.img3 {
-    grid-area: img3;
-}
-
-.img4 {
-    grid-area: img4;
-}
-
-@media (min-width:350px) {
-    .mainIndex {
-        display: grid;
-        padding-top: 7.5rem;
-        grid-template-areas:
-            "des des"
-            "car car"
-            "img1 img2"
-            "img3 img4"
-        ;
-        gap: 1rem;
-    }
-}
-
-@media (min-width:768px) {
-    .mainIndex {
-        display: grid;
-        grid-template-areas:
-            "des des des"
-            "car car img1"
-            "car car img2"
-        ;
-    }
-
-    .img3 {
-        display: none;
-    }
-
-    .img4 {
-        display: none;
-    }
-}
-
-@media (min-width:992px) {
-    .mainIndex {
-        display: grid;
-        grid-template-areas:
-            "des des des des"
-            "car car img1 img2"
-            "car car img3 img4";
-    }
-
-    .img3 {
-        display: block;
-    }
-
-    .img4 {
-        display: block;
-    }
-} */
 
 /* MAIN PRODUCTOS */
 .mainProd {
-    padding-top: 7.5rem;
+  padding-top: 7.5rem;
 }
-
 .mainProd h1 {
-    color: #f5537b;
-    font-weight: bolder;
+  color: #f5537b;
+  font-weight: bolder;
 }
 
 /* MAIN QUIENES SOMOS */
-
 .mainQuiSom {
-    padding-top: 7.5rem;
+  padding-top: 7.5rem;
 }
-
 .mainQuiSom h1 {
-    color: #f5537b;
-    font-weight: bolder;
+  color: #f5537b;
+  font-weight: bolder;
 }
 
 /* MAIN CONTACTO */
-
 .mainContacto {
-    padding-top: 7.5rem;
+  padding-top: 7.5rem;
 }
-
 .mainContacto h1 {
-    color: #f5537b;
-    font-weight: bolder;
+  color: #f5537b;
+  font-weight: bolder;
 }
 
 /* MAIN PREGUNTAS FRECUENTES */
-
 .mainPrFr {
-    padding-top: 7.5rem;
+  padding-top: 7.5rem;
 }
-
 .mainPrFr h1 {
-    color: #f5537b;
-    font-weight: bolder;
+  color: #f5537b;
+  font-weight: bolder;
 }
 
 .accordion-item {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .accordion-button {
-    background-color: coral;
-    font-weight: bolder;
-    opacity: 80%;
+  background-color: coral;
+  font-weight: bolder;
+  opacity: 80%;
 }
 
-
 /* FOOTER */
-
 .footerSpan {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 /* loguito flotante de wp */
-
 .logoWp {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 2;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
 }
 
+/*# sourceMappingURL=style.css.map */

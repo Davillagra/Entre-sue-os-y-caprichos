@@ -1,0 +1,143 @@
+$color_1: black;
+$color_2: #fb6f92;
+$color_3: #f5537b;
+$font-family_1: 'Sofia Sans', sans-serif;
+$background-color_1: #FFC2D1;
+$background-color_2: #FFB3C6;
+$background-color_3: #F4ACB7;
+$background-color_4: #FFE5EC;
+$background-color_5: #fb6f92;
+$background-color_6: transparent;
+$background-color_7: coral;
+$border-color_1: #fb6f92;
+$border-color_2: black;
+
+@import "https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap";
+@import "animate.css";
+
+body {
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+	background: linear-gradient(to right, #FFE5EC, #fb6f92);
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+/* HEADER */
+.html {
+	font-size: 62.5%;
+}
+.navbar {
+	background-color: $background-color_2;
+	padding: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 4px 4px 15px black;
+}
+.aFormat {
+	color: $color_1;
+	font-weight: 900;
+	font-size: large;
+	&:hover {
+		text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
+		color: $color_2;
+	}
+}
+.aFormat2 {
+	color: $color_1;
+	font-weight: 900;
+	font-size: large;
+}
+.dropdown-menu {
+	background-color: $background-color_3;
+}
+.dropdown-item {
+	&:hover {
+		background-color: $background-color_1;
+	}
+}
+.form-control {
+	background-color: $background-color_4;
+}
+.btn-outline-success {
+	background-color: $background-color_4;
+	border-color: $border-color_1;
+	&:hover {
+		background-color: $background-color_5;
+		border-color: $border-color_2;
+	}
+	&:active {
+		background-color: $background-color_5 !important;
+	}
+}
+/* MAIN INDEX */
+.mainIndex {
+	padding-top: 7.5rem;
+}
+.mainH1 {
+	font-weight: bolder;
+	color: $color_3;
+}
+.mainH2 {
+	color: $color_1;
+	font-weight: bolder;
+	text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
+}
+.carousel-control-prev {
+	opacity: 100%;
+}
+.carousel-control-next {
+	opacity: 100%;
+}
+/* MAIN PRODUCTOS */
+.mainProd {
+	padding-top: 7.5rem;
+	h1 {
+		color: $color_3;
+		font-weight: bolder;
+	}
+}
+/* MAIN QUIENES SOMOS */
+.mainQuiSom {
+	padding-top: 7.5rem;
+	h1 {
+		color: $color_3;
+		font-weight: bolder;
+	}
+}
+/* MAIN CONTACTO */
+.mainContacto {
+	padding-top: 7.5rem;
+	h1 {
+		color: $color_3;
+		font-weight: bolder;
+	}
+}
+/* MAIN PREGUNTAS FRECUENTES */
+.mainPrFr {
+	padding-top: 7.5rem;
+	h1 {
+		color: $color_3;
+		font-weight: bolder;
+	}
+}
+.accordion-item {
+	background-color: $background-color_6;
+}
+.accordion-button {
+	background-color: $background-color_7;
+	font-weight: bolder;
+	opacity: 80%;
+}
+/* FOOTER */
+.footerSpan {
+	font-weight: bolder;
+}
+/* loguito flotante de wp */
+.logoWp {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 2;
+}
