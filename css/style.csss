@@ -1,9 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap";
-@import 'https://fonts.googleapis.com/css2?family=Gorditas&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap';
 @import "animate.css";
 body {
-  font-family: "Londrina Solid", cursive;
+  font-family: "Sofia Sans", sans-serif;
   background-color: #FFC2D1;
   background: linear-gradient(to right, #FFE5EC, #fb6f92);
 }
@@ -13,11 +11,11 @@ body {
   margin: 0;
 }
 
+/* HEADER */
 .html {
   font-size: 62.5%;
 }
 
-/* HEADER */
 .navbar {
   background-color: #FFB3C6;
   padding: 0;
@@ -28,20 +26,17 @@ body {
 
 .aFormat {
   color: black;
-  font-weight: 400;
+  font-weight: 900;
   font-size: large;
 }
 .aFormat:hover {
   text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
   color: #fb6f92;
 }
-.aFormat:focus {
-  border: none;
-}
 
 .aFormat2 {
   color: black;
-  font-weight: 400;
+  font-weight: 900;
   font-size: large;
 }
 
@@ -85,28 +80,14 @@ body {
 }
 
 .mainH1 {
-  font-weight: 900;
+  font-weight: bolder;
   color: #f5537b;
-}
-
-.carousel-caption {
-  right: 5px;
-  top: 5px;
-  left: unset;
-  padding-top: 0;
-  padding-bottom: 0;
-  bottom: 0;
-  height: 2.5rem;
-  background-color: #fb6f92;
-  opacity: 50%;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .mainH2 {
   color: black;
-  font-weight: 900;
-  margin-bottom: 0;
+  font-weight: bolder;
+  text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white;
 }
 
 .carousel-control-prev {
@@ -123,37 +104,35 @@ body {
 }
 .mainProd h1 {
   color: #f5537b;
-  font-weight: 900;
+  font-weight: bolder;
+}
+.mainProd div div p del {
+  font-weight: lighter;
+  text-shadow: none;
 }
 .mainProd div div .priceStyle {
-  font-weight: 900;
+  font-weight: bolder;
   font-size: 1.2rem;
-  color: rgb(10, 117, 19);
-}
-.mainProd div div .priceStyle del {
-  font-weight: 300 !important;
+  color: black;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
 }
 .mainProd div div ul li .dropdown-item {
-  font-weight: 400;
+  font-weight: bolder;
 }
 .mainProd nav ul li a {
   color: black;
-  font-weight: 400;
+  font-weight: bolder;
   border: #fb6f92 solid 1px;
 }
 .mainProd nav ul li a:hover {
   color: black;
-  font-weight: 400;
+  font-weight: bolder;
   border: #fb6f92 solid 1px;
 }
 .mainProd nav ul li a:focus {
   color: black;
-  font-weight: 400;
+  font-weight: bolder;
   border: #fb6f92 solid 1px;
-}
-
-.breadcrumItem {
-  display: inline;
 }
 
 /* MAIN QUIENES SOMOS */
@@ -162,7 +141,7 @@ body {
 }
 .mainQuiSom h1 {
   color: #f5537b;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 /* MAIN CONTACTO */
@@ -171,7 +150,7 @@ body {
 }
 .mainContacto h1 {
   color: #f5537b;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 /* MAIN PREGUNTAS FRECUENTES */
@@ -180,7 +159,7 @@ body {
 }
 .mainPrFr h1 {
   color: #f5537b;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 .accordion-item {
@@ -189,13 +168,13 @@ body {
 
 .accordion-button {
   background-color: coral;
-  font-weight: 400;
+  font-weight: bolder;
   opacity: 80%;
 }
 
 /* FOOTER */
 .footerSpan {
-  font-weight: 400;
+  font-weight: bolder;
 }
 
 /* loguito flotante de wp */
@@ -206,4 +185,4 @@ body {
   z-index: 2;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */
