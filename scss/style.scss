@@ -1,3 +1,8 @@
+@import "https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Gorditas&display=swap';
+@import'https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap';
+@import "animate.css";
+
 $color_1: black;
 $color_2: #fb6f92;
 $color_3: #f5537b;
@@ -13,11 +18,6 @@ $border-color_1: #fb6f92;
 $border-color_2: black;
 $fw: 400;
 $fw2: 900;
-
-@import "https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100&display=swap";
-@import 'https://fonts.googleapis.com/css2?family=Gorditas&display=swap';
-@import'https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap';
-@import "animate.css";
 
 body {
 	font-family: $font-family_1;
@@ -105,7 +105,7 @@ body {
 
 /* MAIN INDEX */
 .mainIndex {
-	padding-top: 7.5rem;
+	padding-top: 8rem;
 }
 
 .mainH1 {
@@ -143,7 +143,7 @@ body {
 
 /* MAIN PRODUCTOS */
 .mainProd {
-	padding-top: 7.5rem;
+	padding-top: 8rem;
 
 	h1 {
 		color: $color_3;
@@ -201,7 +201,7 @@ body {
 
 /* MAIN QUIENES SOMOS */
 .mainQuiSom {
-	padding-top: 7.5rem;
+	padding-top: 8rem;
 
 	h1 {
 		color: $color_3;
@@ -211,17 +211,29 @@ body {
 
 /* MAIN CONTACTO */
 .mainContacto {
-	padding-top: 7.5rem;
+	padding-top: 8rem;
 
 	h1 {
 		color: $color_3;
 		font-weight: $fw2;
 	}
 }
+.form-control {
+	background-color: white;
+	opacity: 60%;
+}
+
+.eMail {
+	padding-right: 5.05rem;
+}
+
+.input-group-text {
+	align-items: unset;
+}
 
 /* MAIN PREGUNTAS FRECUENTES */
 .mainPrFr {
-	padding-top: 7.5rem;
+	padding-top: 8rem;
 
 	h1 {
 		color: $color_3;

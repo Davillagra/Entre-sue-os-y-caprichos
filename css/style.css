@@ -81,7 +81,7 @@ body {
 
 /* MAIN INDEX */
 .mainIndex {
-  padding-top: 7.5rem;
+  padding-top: 8rem;
 }
 
 .mainH1 {
@@ -119,7 +119,7 @@ body {
 
 /* MAIN PRODUCTOS */
 .mainProd {
-  padding-top: 7.5rem;
+  padding-top: 8rem;
 }
 .mainProd h1 {
   color: #f5537b;
@@ -158,7 +158,7 @@ body {
 
 /* MAIN QUIENES SOMOS */
 .mainQuiSom {
-  padding-top: 7.5rem;
+  padding-top: 8rem;
 }
 .mainQuiSom h1 {
   color: #f5537b;
@@ -167,16 +167,29 @@ body {
 
 /* MAIN CONTACTO */
 .mainContacto {
-  padding-top: 7.5rem;
+  padding-top: 8rem;
 }
 .mainContacto h1 {
   color: #f5537b;
   font-weight: 900;
 }
 
+.form-control {
+  background-color: white;
+  opacity: 60%;
+}
+
+.eMail {
+  padding-right: 5.05rem;
+}
+
+.input-group-text {
+  align-items: unset;
+}
+
 /* MAIN PREGUNTAS FRECUENTES */
 .mainPrFr {
-  padding-top: 7.5rem;
+  padding-top: 8rem;
 }
 .mainPrFr h1 {
   color: #f5537b;

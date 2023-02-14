@@ -29,28 +29,8 @@
                         <li class="nav-item">
                             <a class="nav-link aFormat" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item dropdown btn-group">
-                            <a class="nav-link aFormat" href="productos.html">
-                                Productos
-                            </a>
-                            <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <span class="visually-hidden">Toggle Dropdown</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item aFormat" href="categorias/coffee.html">Coffee</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Mate</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Botellas</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Cuidado Personal</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Deco</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Cocina</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Infantil</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Vasos</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Desk Lover</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Super Sale</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Stitch Lover</a></li>
-                                <li><a class="dropdown-item aFormat" href="#">Boxes</a></li>
-                            </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link aFormat" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link aFormat" href="quienes-somos.html">Quienes Somos</a>
@@ -65,7 +45,7 @@
                     <form class="d-flex mb-3" role="search">
                         <input class="form-control me-2 aFormat2" type="search" placeholder="Buscar"
                             aria-label="Search">
-                        <button class="btn btn-outline-success aFormat2" type="submit">Buscar</button>
+                        <button class="btn btn-outline-success1 aFormat2" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -75,41 +55,39 @@
 
     <main class="mainContacto container">
         <h1 class="text-center fs-1">Contacto:</h1>
-        <div class="row m-3">
-            <div>
-                <div class="col-6">
-                    <h2 class="text-center">Direccion</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14240.417297867583!2d-65.22635605!3d-26.83663395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1675118586447!5m2!1ses!2sar"
-                        width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2 class="text-center">Direccion</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14240.417297867583!2d-65.22635605!3d-26.83663395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1675118586447!5m2!1ses!2sar"
+                    width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2 class="text-center">Dejanos tu mensaje:</h2>
+                <div class="input-group">
+                    <span class="input-group-text">Nombre/Apellido</span>
+                    <input placeholder="Nombre/es" type="text" aria-label="Nombre/es" class="form-control">
+                    <input placeholder="Apellido" type="text" aria-label="Apellido" class="form-control">
                 </div>
-                <div class="col-6">
-                    <h2 class="text-center">Dejanos tu mensaje:</h2>
-                    <div class="input-group">
-                        <span class="input-group-text">Nombre/Apellido</span>
-                        <input placeholder="Nombre/es" type="text" aria-label="Nombre/es" class="form-control">
-                        <input placeholder="Apellido" type="text" aria-label="Apellido" class="form-control">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-text">eMail</span>
-                        <input placeholder="eMail" type="email" aria-label="eMail" class="form-control">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-text">Dejanos tu mensaje</span>
-                        <textarea placeholder="Escribe tu mensaje" class="form-control"
-                            aria-label="Dejanos tu mensaje"></textarea>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            Recibir promociones en mi correo
-                        </label>
-                    </div>
-                    <div>
-                        <button class="btn btn-outline-success1 aFormat2" type="submit">Enviar</button>
-                        <button class="btn btn-outline-success1 aFormat2" type="submit">Borrar</button>
-                    </div>
+                <div class="input-group">
+                    <span class="input-group-text eMail">eMail</span>
+                    <input placeholder="eMail" type="email" aria-label="eMail" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Dejanos tu mensaje</span>
+                    <textarea placeholder="Escribe tu mensaje" class="form-control"
+                        aria-label="Dejanos tu mensaje"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Recibir promociones en mi correo
+                    </label>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success1 aFormat2" type="submit">Enviar</button>
+                    <button class="btn btn-outline-success1 aFormat2" type="submit">Borrar</button>
                 </div>
             </div>
         </div>
