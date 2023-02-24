@@ -1,0 +1,27 @@
+@import '_variables';
+
+.btn-outline-success1 {
+	background-color: $background-color_4;
+	border-color: $border-color_1;
+
+	&:hover {
+		background-color: $background-color_5;
+		border-color: $border-color_2;
+	}
+
+	&:active {
+		background-color: $background-color_5 !important;
+		box-shadow: none !important;
+		border-color: $border-color_2;
+	}
+
+	&:focus {
+		background-color: $background-color_5 !important;
+		border-color: $border-color_2;
+	}
+
+	&:focus-within {
+		background-color: $background-color_5 !important;
+		border-color: $border-color_2;
+	}
+}

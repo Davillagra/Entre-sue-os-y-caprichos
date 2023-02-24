@@ -1,0 +1,11 @@
+@import '_variables';
+
+.dropdown-menu {
+	background-color: $background-color_3;
+}
+
+.dropdown-item {
+	&:hover {
+		background-color: $background-color_1;
+	}
+}

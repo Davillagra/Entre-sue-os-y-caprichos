@@ -2,59 +2,13 @@
 @import 'https://fonts.googleapis.com/css2?family=Gorditas&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap';
 @import "animate.css";
-body {
-  font-family: "Londrina Solid", cursive;
-  background-color: #FFC2D1;
-  background: linear-gradient(to right, #FFE5EC, #fb6f92);
-}
-
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.html {
-  font-size: 62.5%;
-}
-
-/* HEADER */
-.navbar {
-  background-color: #FFB3C6;
-  padding: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 4px 4px 15px black;
-}
-
-.aFormat {
-  color: black;
-  font-weight: 400;
-  font-size: large;
-}
-.aFormat:hover {
-  text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
-  color: #fb6f92;
-}
-.aFormat:focus {
-  border: none;
-}
-
-.aFormat2 {
-  color: black;
-  font-weight: 400;
-  font-size: large;
-}
-
+/* imports */
 .dropdown-menu {
   background-color: #F4ACB7;
 }
 
 .dropdown-item:hover {
   background-color: #FFC2D1;
-}
-
-.form-control {
-  background-color: #FFE5EC;
 }
 
 .btn-outline-success1 {
@@ -79,16 +33,6 @@ body {
   border-color: black;
 }
 
-/* MAIN INDEX */
-.mainIndex {
-  padding-top: 8rem;
-}
-
-.mainH1 {
-  font-weight: 900;
-  color: #f5537b;
-}
-
 .carousel-caption {
   right: 5px;
   top: 5px;
@@ -103,18 +47,70 @@ body {
   padding-right: 1rem;
 }
 
-.mainH2 {
-  color: black;
-  font-weight: 900;
-  margin-bottom: 0;
-}
-
 .carousel-control-prev {
   opacity: 100%;
 }
 
 .carousel-control-next {
   opacity: 100%;
+}
+
+body {
+  font-family: "Londrina Solid", cursive;
+  background-color: #FFC2D1;
+  background: linear-gradient(to right, #FFE5EC, #f591aa);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+/* HEADER */
+header .navbar {
+  background-color: #FFB3C6;
+  padding: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 4px 4px 15px black;
+}
+header .navbar div div ul li .aFormat {
+  color: black;
+  font-weight: 400;
+  font-size: large;
+}
+header .navbar div div ul li .aFormat:hover {
+  text-shadow: 1px 0 0 #fb6f92, -1px 0 0 #fb6f92, 0 1px 0 #fb6f92, 0 -1px 0 #fb6f92;
+  color: #fb6f92;
+}
+header .navbar div div ul li .aFormat:focus {
+  border: none;
+}
+header .navbar div div form .aFormat2 {
+  color: black;
+  font-weight: 400;
+  font-size: large;
+}
+header .navbar div div form .form-control {
+  background-color: #FFE5EC;
+}
+
+/* MAIN INDEX */
+.mainIndex {
+  padding-top: 8rem;
+}
+.mainIndex div div div div div .mainH2 {
+  color: black;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.mainIndex .mainH1 {
+  font-weight: 900;
+  color: #f5537b;
 }
 
 /* MAIN PRODUCTOS */
@@ -128,7 +124,7 @@ body {
 .mainProd div div .priceStyle {
   font-weight: 900;
   font-size: 1.2rem;
-  color: rgb(10, 117, 19);
+  color: rgb(248, 55, 248);
 }
 .mainProd div div .priceStyle del {
   font-weight: 300 !important;
@@ -136,10 +132,17 @@ body {
 .mainProd div div ul li .dropdown-item {
   font-weight: 400;
 }
+.mainProd nav ol .breadcrumItem {
+  display: inline;
+}
 .mainProd nav ul li a {
   color: black;
   font-weight: 400;
   border: #fb6f92 solid 1px;
+}
+.mainProd nav ul li a:active {
+  box-shadow: none !important;
+  border-color: black;
 }
 .mainProd nav ul li a:hover {
   color: black;
@@ -149,11 +152,10 @@ body {
 .mainProd nav ul li a:focus {
   color: black;
   font-weight: 400;
-  border: #fb6f92 solid 1px;
+  border: black solid 1px;
 }
-
-.breadcrumItem {
-  display: inline;
+.mainProd nav ul li a:focus-within {
+  border-color: black;
 }
 
 /* MAIN QUIENES SOMOS */
@@ -173,18 +175,16 @@ body {
   color: #f5537b;
   font-weight: 900;
 }
+.mainContacto div div .eMail {
+  padding-right: 5.05rem;
+}
+.mainContacto div div .input-group-text {
+  align-items: unset;
+}
 
 .form-control {
   background-color: white;
   opacity: 60%;
-}
-
-.eMail {
-  padding-right: 5.05rem;
-}
-
-.input-group-text {
-  align-items: unset;
 }
 
 /* MAIN PREGUNTAS FRECUENTES */
@@ -195,12 +195,10 @@ body {
   color: #f5537b;
   font-weight: 900;
 }
-
-.accordion-item {
+.mainPrFr div .accordion-item {
   background-color: transparent;
 }
-
-.accordion-button {
+.mainPrFr div div h2 .accordion-button {
   background-color: coral;
   font-weight: 400;
   opacity: 80%;

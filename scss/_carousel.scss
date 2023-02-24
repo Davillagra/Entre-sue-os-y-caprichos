@@ -1,0 +1,23 @@
+@import '_variables';
+
+.carousel-caption {
+	right: 5px;
+	top: 5px;
+	left: unset;
+	padding-top: 0;
+	padding-bottom: 0;
+	bottom: 0;
+	height: 2.5rem;
+	background-color: $background-color_5;
+	opacity: 50%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.carousel-control-prev {
+	opacity: 100%;
+}
+
+.carousel-control-next {
+	opacity: 100%;
+}
