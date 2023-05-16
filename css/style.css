@@ -121,15 +121,116 @@ header .navbar div div form .form-control {
   color: #f5537b;
   font-weight: 900;
 }
-.mainProd div div .priceStyle {
+.mainProd .filtersCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainProd .filtersCard nav {
+  margin-top: 15px;
+  display: block;
+  width: inherit;
+}
+.mainProd .filtersCard div {
+  display: block;
+  width: inherit;
+}
+.mainProd .filtersCard .jsButton {
+  text-decoration: none;
+  color: black !important;
+}
+.mainProd #prodForm {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  background-color: #F4ACB7;
+  border-radius: 5px;
+  width: 15rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.mainProd #prodForm .form {
+  display: inline-block;
+  background-color: #F4ACB7;
+  border: none;
+  border-bottom: 1px solid black;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 1.22rem;
+  margin-bottom: 1.22rem;
+}
+.mainProd #prodForm .submit {
+  display: inline-block;
+  box-sizing: inherit;
+  margin-bottom: 1.5rem;
+}
+.mainProd #prodCards {
+  display: block;
+}
+.mainProd #prodCards .prodCard {
+  display: inline-block;
+  margin-left: 2%;
+  width: 23%;
+  border: solid #dee2e6 2px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.mainProd #prodCards .prodCard .prodInfo {
+  display: inline-block;
+  width: 100%;
+}
+.mainProd #prodCards .prodCard .prodInfo h2 {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+}
+.mainProd #prodCards .prodCard .prodInfo span {
+  display: inline-block;
+  margin-top: 1rem;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+.mainProd #prodCards .prodCard .prodInfo p {
+  display: inline-block;
+  margin-top: 1rem;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  font-size: 1.8rem;
+}
+.mainProd #prodCards .prodCard .buttonForm {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+.mainProd #prodCards .prodCard .buttonForm button {
+  display: block;
+  border-radius: 0 5px 5px 0;
+}
+.mainProd #prodCards .prodCard .buttonForm input {
+  display: block;
+  border-radius: 5px 0 0 5px;
+  padding: 0;
+}
+.mainProd #prodCards .prodCard #addCart {
+  margin: auto;
+  display: block;
+}
+.mainProd #prodCards .prodCard .priceStyle {
   font-weight: 900;
   font-size: 1.2rem;
   color: rgb(248, 55, 248);
 }
-.mainProd div div .priceStyle del {
+.mainProd #prodCards .prodCard .priceStyle del {
   font-weight: 300 !important;
 }
-.mainProd div div ul li .dropdown-item {
+.mainProd #prodCards .prodCard ul li .dropdown-item {
   font-weight: 400;
 }
 .mainProd nav ol .breadcrumItem {
@@ -155,6 +256,259 @@ header .navbar div div form .form-control {
   border: black solid 1px;
 }
 .mainProd nav ul li a:focus-within {
+  border-color: black;
+}
+
+/* MAIN EDIT */
+.mainProdEdit {
+  padding-top: 8rem;
+}
+.mainProdEdit h1 {
+  color: #f5537b;
+  font-weight: 900;
+}
+.mainProdEdit .filtersCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainProdEdit .filtersCard nav {
+  margin-top: 15px;
+  display: block;
+  width: inherit;
+}
+.mainProdEdit .filtersCard div {
+  display: block;
+  width: inherit;
+}
+.mainProdEdit .filtersCard .jsButton {
+  text-decoration: none;
+  color: black !important;
+}
+.mainProdEdit #prodForm {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  background-color: #F4ACB7;
+  border-radius: 5px;
+  width: 15rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+.mainProdEdit #prodForm .form {
+  display: inline-block;
+  background-color: #F4ACB7;
+  border: none;
+  border-bottom: 1px solid black;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 1.22rem;
+  margin-bottom: 1.22rem;
+}
+.mainProdEdit #prodForm .submit {
+  display: inline-block;
+  box-sizing: inherit;
+  margin-bottom: 1.5rem;
+}
+.mainProdEdit #prodCards {
+  display: block;
+}
+.mainProdEdit #prodCards .prodCard {
+  display: inline-block;
+  margin-left: 2%;
+  width: 23%;
+  border: solid #dee2e6 2px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.mainProdEdit #prodCards .prodCard .prodInfo {
+  display: block;
+  margin: 1rem;
+}
+.mainProdEdit #prodCards .prodCard .prodInfo h2 {
+  display: inline-block;
+  width: 35%;
+  margin-top: 2rem;
+}
+.mainProdEdit #prodCards .prodCard .prodInfo input {
+  display: inline-block;
+  width: 65%;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+.mainProdEdit #prodCards .prodCard .prodInfo p {
+  display: inline-block;
+  width: 35%;
+  margin-top: 2rem;
+}
+.mainProdEdit #prodCards .prodCard .buttonForm {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.mainProdEdit #prodCards .prodCard #addCart {
+  margin: auto;
+  display: block;
+}
+.mainProdEdit #prodCards .prodCard .priceStyle {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: rgb(248, 55, 248);
+}
+.mainProdEdit #prodCards .prodCard .priceStyle del {
+  font-weight: 300 !important;
+}
+.mainProdEdit #prodCards .prodCard ul li .dropdown-item {
+  font-weight: 400;
+}
+.mainProdEdit nav ol .breadcrumItem {
+  display: inline;
+}
+.mainProdEdit nav ul li a {
+  color: black;
+  font-weight: 400;
+  border: #fb6f92 solid 1px;
+}
+.mainProdEdit nav ul li a:active {
+  box-shadow: none !important;
+  border-color: black;
+}
+.mainProdEdit nav ul li a:hover {
+  color: black;
+  font-weight: 400;
+  border: #fb6f92 solid 1px;
+}
+.mainProdEdit nav ul li a:focus {
+  color: black;
+  font-weight: 400;
+  border: black solid 1px;
+}
+.mainProdEdit nav ul li a:focus-within {
+  border-color: black;
+}
+
+/* MAIN PROD CART */
+.mainProdCart {
+  padding-top: 8rem;
+}
+.mainProdCart h1 {
+  color: #f5537b;
+  font-weight: 900;
+}
+.mainProdCart .filtersCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainProdCart .filtersCard nav {
+  margin-top: 15px;
+  display: block;
+  width: inherit;
+}
+.mainProdCart .filtersCard div {
+  display: block;
+  width: inherit;
+}
+.mainProdCart .filtersCard .jsButton {
+  text-decoration: none;
+  color: black !important;
+}
+.mainProdCart #prodCards {
+  display: flex;
+  flex-direction: column;
+}
+.mainProdCart #prodCards .prodCard {
+  display: block;
+  border: solid #dee2e6 2px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  position: relative;
+}
+.mainProdCart #prodCards .prodCard .imgCart {
+  display: inline;
+}
+.mainProdCart #prodCards .prodCard .imgCart img {
+  width: 10%;
+}
+.mainProdCart #prodCards .prodCard .prodInfo {
+  position: absolute;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  top: 10%;
+}
+.mainProdCart #prodCards .prodCard .buttonForm {
+  position: absolute;
+  display: inline-flex;
+  width: 90%;
+  top: 55%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.mainProdCart #prodCards .prodCard .buttonForm .removeElement {
+  display: block;
+  border-radius: 0 5px 5px 0;
+}
+.mainProdCart #prodCards .prodCard .buttonForm input {
+  display: block;
+  border-radius: 5px 0 0 5px;
+  padding: 0;
+  padding-right: 1rem;
+}
+.mainProdCart #prodCards .prodCard .buttonForm .removeCard {
+  position: absolute;
+  right: 1rem;
+}
+.mainProdCart #prodCards .prodCard .priceStyle {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: rgb(248, 55, 248);
+}
+.mainProdCart #prodCards .prodCard .priceStyle del {
+  font-weight: 300 !important;
+}
+.mainProdCart #prodCards .prodCard ul li .dropdown-item {
+  font-weight: 400;
+}
+.mainProdCart .buyButton {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.mainProdCart .buyButton button {
+  display: block;
+  width: 20%;
+}
+.mainProdCart nav ol .breadcrumItem {
+  display: inline;
+}
+.mainProdCart nav ul li a {
+  color: black;
+  font-weight: 400;
+  border: #fb6f92 solid 1px;
+}
+.mainProdCart nav ul li a:active {
+  box-shadow: none !important;
+  border-color: black;
+}
+.mainProdCart nav ul li a:hover {
+  color: black;
+  font-weight: 400;
+  border: #fb6f92 solid 1px;
+}
+.mainProdCart nav ul li a:focus {
+  color: black;
+  font-weight: 400;
+  border: black solid 1px;
+}
+.mainProdCart nav ul li a:focus-within {
   border-color: black;
 }
 
@@ -199,7 +553,7 @@ header .navbar div div form .form-control {
   background-color: transparent;
 }
 .mainPrFr div div h2 .accordion-button {
-  background-color: coral;
+  background-color: #ff7f50;
   font-weight: 400;
   opacity: 80%;
 }

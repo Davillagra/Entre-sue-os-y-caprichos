@@ -1,0 +1,25 @@
+[{
+    "name":"Taza ceramica",
+    "stock": 15,
+    "id": 0,
+    "price": 3500,
+    "category":"Cocina",
+    "date": "2023-05-16T10:30:00Z"
+},
+{
+    "name":"Maceta Cactus",
+    "stock": 12,
+    "id": 1,
+    "price": 500,
+    "category":"Deco",
+    "date": "2023-05-16T10:30:00Z"
+},
+{
+    "name":"Jarro Glitter",
+    "stock": 15,
+    "id": 2,
+    "price": 700,
+    "category":"Cocina",
+    "date": "2023-05-16T10:30:00Z"
+}
+]
